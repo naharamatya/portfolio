@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amatya Nahar - Work Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/302309f970.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <!-- <img src="images/a_nahar_blackwhite.png" alt="logo" class="logo" /> -->
+      <!-- <span class="name"> <span class="highlight">A</span>matya.</span> -->
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="Resume_AmatyaNahar.docx" download
+            >Resume<i class="fa-solid fa-download"></i
+          ></a>
+        </li>
+
+        <i class="fa-solid fa-xmark mobile-view" onclick="closemenu()"></i>
+      </ul>
+      <i
+        class="fa-solid fa-bars mobile-view"
+        onclick="openmenu()"
+        style="margin-left: 90%"
+      ></i>
+    </nav>
+    <div id="header">
+      <div class="container">
+        <div class="header-text">
+          <h2>
+            Hi, I'm <span class="highlight"> Amatya Nahar </span><br />
+            From INDIA
+          </h2>
+          <br />
+          <p>Full Stack Software Developer <br /></p>
+          [☕ Java | 🌱 Spring Boot | 🅰️ Angular | <br />🐬 MySQL | 🐱 GitHub]
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------------about----------------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="images/amatya_nahar_about_me.png"
+              alt="amatya_nahar_about_me photo"
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Senior Full Stack Software Developer with 6 years of IT
+              experience. <br />
+              <br />
+              Proven ability to leverage full-stack expertise to build
+              interactive, user-centric web applications. <br />
+              <br />
+              Effective communication skills to liaise with both technical and
+              non-technical project stakeholders <br />
+              <br />
+              Quick-Learner, Self-Motivated, and a Team Player. <br />
+              <br />
+            </p>
+            <div id="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Backend:</span><br />
+                  Java, Spring Boot
+                </li>
+
+                <li>
+                  <span>Frontend:</span><br />
+                  Angular, TypeScript, JavaScript, HTML, CSS
+                </li>
+
+                <li>
+                  <span>Databases:</span><br />
+                  MySQL, SQL Server
+                </li>
+
+                <li>
+                  <span>Tools:</span><br />
+                  Git, GitHub, Bitbucket, JIRA, Maven and Postman
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>May 15, 2024 – July 9, 2025 | Pune | Maharashtra</span
+                  ><br />
+                  Capgemini Technology Services India Limited - Consultant
+                </li>
+
+                <li>
+                  <span
+                    >January 15, 2021 – August 31, 2021 | Pune |
+                    Maharashtra</span
+                  ><br />
+                  Future Focus InfoTech Private Limited - Senior Software
+                  Developer
+                </li>
+
+                <li>
+                  <span>June 1, 2016 – June 22, 2020 | Pune | Maharashtra</span
+                  ><br />
+                  Larsen & Toubro InfoTech Limited - Senior Software Engineer
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2015</span><br />
+                  Bachelor of Engineering (Computer Science & Engineering) from
+                  <br />
+                  Sushila Devi Bansal College of Technology, Indore, Madhya
+                  Pradesh
+                </li>
+
+                <li>
+                  <span>2011</span><br />
+                  Higher Secondary Certificate (HSC) examination from
+                  <br />Mount Carmel School, Indore, Madhya Pradesh
+                </li>
+
+                <li>
+                  <span>2009</span><br />
+                  Secondary School Certificate (SSC) examination from
+                  <br />Mount Carmel School, Indore, Madhya Pradesh
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------services------------------------- -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-leaf"></i>
+            <h2>Rest APIs using Spring Boot</h2>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-java"></i>
+            <h2>Java Development</h2>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-angular"></i>
+            <h2>Angular Development</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------portfolio------------------------- -->
+
+    <!--
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="work1.png" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                saepe explicabo!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-2.png" alt="work1.png" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                saepe explicabo!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-3.png" alt="work1.png" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                saepe explicabo!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn"> See more </a>
+      </div>
+    </div>
+    -->
+
+    <!-- ---------------------------contact---------------------------------------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <a href="mailto:naharamatya@gmail.com"
+              ><p>
+                <i class="fa-solid fa-envelope"></i>naharamatya@gmail.com
+              </p></a
+            >
+
+            <p><i class="fa-solid fa-phone"></i>+91-78987-84898</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/nahar.amatya" target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+
+              <a href="https://www.instagram.com/nahar.amatya/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+
+              <a href="https://www.linkedin.com/in/naharamatya/" target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+
+              <a href="https://github.com/naharamatya" target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+            <a href="Resume_AmatyaNahar.docx" download class="btn btn2"
+              >Download My Resume<i class="fa-solid fa-download"></i
+            ></a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Send Message</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          Copyright &copy; naharamatya@gmail.com | Made with
+          <i class="fa-solid fa-heart"></i> by Amatya Nahar.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      let sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0px";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwBfo91hdJvVLloXFEVlF4UQ8rOhEeCLwf9rgnaSDjEuswHBTb28-UZCHqBD8bw3vdF/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(() => {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
