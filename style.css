@@ -25,6 +25,8 @@ body {
 
 .container {
   padding: 8px 8%;
+  min-width: fit-content;
+  min-height: fit-content;
 }
 
 nav {
@@ -432,17 +434,28 @@ form .btn2 {
 nav .mobile-view {
   display: none;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
+  html {
+    min-width: fit-content;
+  }
+  .container {
+    padding: 8px 8%;
+    min-width: fit-content;
+    min-height: fit-content;
+  }
   #header {
     background-image: url(images/amatya_nahar_mobile.png);
     background-attachment: scroll;
+    background-size: contain;
+    border: 2px solid green;
+    height: fit-content;
   }
   .header-text {
-    margin-top: 100%;
+    margin-top: 95%;
     font-size: 14px;
   }
   .header-text h1 {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   nav .mobile-view {
@@ -476,16 +489,16 @@ nav .mobile-view {
   }
 
   .sub-title {
-    font-size: 15px;
+    font-size: 10px;
   }
 
   .about-col-1,
   .about-col-2 {
-    flex-basis: 100%;
+    flex-basis: 80%;
   }
 
   .about-col-1 {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .about-col-2 {
@@ -504,5 +517,9 @@ nav .mobile-view {
 
   .copyright {
     font-size: 20px;
+  }
+
+  .sub-title {
+    font-size: 24px;
   }
 }
