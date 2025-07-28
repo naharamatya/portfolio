@@ -12,14 +12,15 @@
     ></script>
   </head>
   <body>
-    <nav>
-      <!-- <img src="images/a_nahar_blackwhite.png" alt="logo" class="logo" /> -->
-      <!-- <span class="name"> <span class="highlight">A</span>matya.</span> -->
+    <nav class="nav-mobile">
+      <span id="logo">
+        <a href="#header"> <img src="images/logo.png" class="logo" /></a>
+      </span>
+
       <ul id="sidemenu">
         <li><a href="#header">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
-        <!-- <li><a href="#portfolio">Portfolio</a></li> -->
         <li><a href="#contact">Contact</a></li>
         <li>
           <a href="Resume_AmatyaNahar.pdf" download
@@ -32,21 +33,26 @@
           ></a>
         </li>
 
-        <i class="fa-solid fa-xmark mobile-view" onclick="closemenu()"></i>
+        <i
+          id="close"
+          class="fa-solid fa-xmark mobile-view"
+          onclick="closemenu()"
+        ></i>
       </ul>
       <i
+        id="open"
         class="fa-solid fa-bars mobile-view"
         onclick="openmenu()"
-        style="margin-left: 90%"
       ></i>
     </nav>
     <div id="header">
       <div class="container">
         <div class="header-text">
           <h2>
-            Hi, I'm <span class="highlight"> Amatya Nahar </span><br />
-            From INDIA
+            Hi, I'm <span class="highlight"> Amatya Nahar </span> <br />
+            From INDIA.
           </h2>
+
           <br />
           <p>Full Stack Software Developer <br /></p>
           [☕ Java | 🌱 Spring Boot | 🅰️ Angular | <br />🐬 MySQL | 🐱 GitHub]
