@@ -618,7 +618,7 @@ nav .mobile-view {
   margin-bottom: 20px;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 1s steps(20, end) forwards,
+  animation: typing 1.8s steps(20, end) forwards,
     blink-caret 0.75s step-end infinite;
 }
 
