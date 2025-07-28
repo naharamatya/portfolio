@@ -467,6 +467,15 @@ nav .mobile-view {
     min-height: fit-content;
   }
 
+  .hi {
+    font-size: 24px;
+    color: #0561c4;
+  }
+
+  .highlight {
+    font-size: 26px;
+  }
+
   #header {
     background-image: url(images/amatya_nahar_mobile.png);
     background-attachment: scroll;
@@ -580,11 +589,6 @@ nav .mobile-view {
 
   .sub-title {
     font-size: 24px;
-  }
-
-  .highlight {
-    color: #ff004f;
-    font-family: cursive;
   }
 
   #sidemenu {
