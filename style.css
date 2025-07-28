@@ -113,7 +113,8 @@ nav ul li a:hover::after {
 
 .designation {
   text-decoration: underline;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 34px;
 }
 /* -------------------------about---------------------------------- */
 
@@ -493,6 +494,16 @@ nav .mobile-view {
     min-width: fit-content;
   }
 
+  .designation {
+    text-decoration: underline;
+    font-weight: 300;
+    font-size: 22px;
+  }
+
+  .skills {
+    font-size: 20px;
+  }
+
   nav {
     display: flex;
     flex-wrap: wrap;
@@ -607,7 +618,7 @@ nav .mobile-view {
   margin-bottom: 20px;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 2.5s steps(20, end) forwards,
+  animation: typing 1s steps(20, end) forwards,
     blink-caret 0.75s step-end infinite;
 }
 
