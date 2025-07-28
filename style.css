@@ -360,6 +360,26 @@ nav ul li a:hover::after {
   transform: translateY(-5px);
 }
 
+.resume {
+  display: block;
+}
+
+.resume-btn {
+  display: inline-block;
+  background: #ff004f;
+  padding: 14px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 14px auto;
+  border-radius: 70px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.lp-5 {
+  margin-left: 5px;
+}
+
 .btn2 {
   display: inline-block;
   background: #ff004f;
