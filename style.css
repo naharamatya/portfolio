@@ -557,6 +557,41 @@ nav .mobile-view {
   .sub-title {
     font-size: 24px;
   }
+
+  .highlight {
+    color: #ff004f;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: 600;
+  }
 }
 
 /* ---------------------CSS for Typing effect----------------------- */
+
+.typing-effect {
+  width: 0;
+  margin-bottom: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2.5s steps(20, end) forwards,
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
