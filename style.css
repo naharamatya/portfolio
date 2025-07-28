@@ -447,7 +447,6 @@ nav .mobile-view {
     background-image: url(images/amatya_nahar_mobile.png);
     background-attachment: scroll;
     background-size: contain;
-    border: 2px solid green;
     height: fit-content;
   }
   .header-text {
