@@ -457,7 +457,7 @@ nav .mobile-view {
   }
 
   .container {
-    padding: 2px 4%;
+    padding: 6px 5%;
     min-width: fit-content;
     min-height: fit-content;
   }
@@ -470,8 +470,8 @@ nav .mobile-view {
   }
 
   .header-text {
-    margin-top: 55%;
-    font-size: 24px;
+    margin-top: 90%;
+    font-size: 22px;
     min-width: fit-content;
   }
 
