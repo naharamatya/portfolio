@@ -41,17 +41,13 @@ nav {
   background-color: #0561c4;
 }
 
-#sidemenu {
-  text-align: center;
-}
-
 #logo {
-  margin: 12px 55px 4px 0px;
+  margin: 15px 80px 10px 0px;
   cursor: pointer;
 }
 
 .logo {
-  height: 50px;
+  height: 42px;
 }
 
 .logo:hover {
