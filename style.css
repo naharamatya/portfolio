@@ -125,7 +125,7 @@ nav ul li a:hover::after {
 
 #about img {
   margin-top: 20px;
-  box-shadow: 2px 4px 2px 4px #0561c4;
+  box-shadow: 0px 5px 20px #0561c4, 0px -8px 25px 0px #ff004f;
 }
 
 .row {
@@ -617,7 +617,6 @@ nav .mobile-view {
 
   #about img {
     margin-top: 56px;
-    box-shadow: 2px 4px 2px 4px #0561c4;
   }
 }
 
