@@ -97,7 +97,7 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-  margin-top: 20%;
+  margin-top: 12%;
   margin-right: 40%;
   font-size: 30px;
 }
@@ -618,7 +618,7 @@ nav .mobile-view {
   margin-bottom: 20px;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 1.2s steps(20, end) forwards,
+  animation: typing 1s steps(20, end) forwards,
     blink-caret 0.75s step-end infinite;
 }
 
