@@ -615,6 +615,18 @@ nav .mobile-view {
     margin-right: 0px;
   }
 
+  #about {
+    padding: 5px 0px;
+  }
+
+  #contact {
+    padding: 5px 0px;
+  }
+
+  #services {
+    padding: 5px 0px;
+  }
+
   #about img {
     margin-top: 56px;
   }
