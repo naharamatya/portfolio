@@ -123,6 +123,11 @@ nav ul li a:hover::after {
   color: #ababab;
 }
 
+#about img {
+  margin-top: 20px;
+  box-shadow: 2px 4px 2px 4px #0561c4;
+}
+
 .row {
   display: flex;
   justify-content: space-between;
@@ -502,7 +507,6 @@ nav .mobile-view {
 
   .skills {
     font-size: 18px;
-    margin-bottom: 100px;
   }
 
   nav {
@@ -609,6 +613,11 @@ nav .mobile-view {
 
   #sidemenu {
     margin-right: 0px;
+  }
+
+  #about img {
+    margin-top: 56px;
+    box-shadow: 2px 4px 2px 4px #0561c4;
   }
 }
 
