@@ -119,12 +119,12 @@ nav ul li a:hover::after {
 /* -------------------------about---------------------------------- */
 
 #about {
-  padding: 40px 0;
+  padding: 24px 0;
   color: #ababab;
 }
 
 #about img {
-  margin-top: 20px;
+  margin-top: 24px;
   box-shadow: 0px 5px 20px #0561c4, 0px -8px 25px 0px #ff004f;
 }
 
