@@ -615,16 +615,10 @@ nav .mobile-view {
     margin-right: 0px;
   }
 
-  #about {
-    padding: 5px 0px;
-  }
-
-  #contact {
-    padding: 5px 0px;
-  }
-
+  #about,
+  #contact,
   #services {
-    padding: 5px 0px;
+    padding-top: 100px;
   }
 
   #about img {
