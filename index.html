@@ -312,7 +312,11 @@
               ></textarea>
               <button type="submit" class="btn btn2">Send Message</button>
             </form>
-            <span id="msg"></span>
+            <div id="overlay">
+              <div id="spinner"></div>
+              <!-- <p id="overlay-text">Sending...</p> -->
+              <p id="overlay-text">Sending<span id="dots"></span></p>
+            </div>
           </div>
         </div>
       </div>
@@ -372,21 +376,89 @@
     </script>
 
     <script>
+      const header = document.getElementById("header");
+
+      const mobileImages = [
+        "url('images/amatya_nahar_mobile_image1.png')",
+        "url('images/amatya_nahar_mobile_image2.png')",
+      ];
+
+      const desktopImage = "url('images/amatya_nahar_desktop.png')";
+
+      let intervalId = null;
+      let current = 0;
+
+      function startMobileRotation() {
+        if (intervalId) return;
+
+        function changeMobileImage() {
+          header.style.backgroundImage = mobileImages[current];
+          current = (current + 1) % mobileImages.length;
+        }
+
+        changeMobileImage();
+        intervalId = setInterval(changeMobileImage, 1800);
+      }
+
+      function stopMobileRotation() {
+        if (intervalId) {
+          clearInterval(intervalId);
+          intervalId = null;
+        }
+        header.style.backgroundImage = desktopImage;
+      }
+
+      function handleResize() {
+        if (window.innerWidth <= 650) {
+          startMobileRotation();
+        } else {
+          stopMobileRotation();
+        }
+      }
+
+      window.addEventListener("resize", handleResize);
+      window.addEventListener("DOMContentLoaded", handleResize);
+    </script>
+
+    <script>
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbwBfo91hdJvVLloXFEVlF4UQ8rOhEeCLwf9rgnaSDjEuswHBTb28-UZCHqBD8bw3vdF/exec";
       const form = document.forms["submit-to-google-sheet"];
-      const msg = document.getElementById("msg");
+      const overlay = document.getElementById("overlay");
+      const overlayText = document.getElementById("overlay-text");
+      const spinner = document.getElementById("spinner");
+
       form.addEventListener("submit", (e) => {
         e.preventDefault();
+
+        // Show overlay
+        overlay.style.display = "flex";
+        overlayText.innerText = "Sending...";
+        overlayText.style.color = "white";
+        overlayText.style.fontSize = "22px";
+        spinner.style.display = "block";
+        overlayText.innerHTML = 'Sending<span id="dots"></span>';
+
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
-            msg.innerHTML = "Message sent successfully";
-            setTimeout(() => {
-              msg.innerHTML = "";
-            }, 5000);
             form.reset();
+            spinner.style.display = "none";
+            overlayText.innerText = "Message sent successfully!";
+            overlayText.style.color = "#00ff00";
+            overlayText.style.fontSize = "24px";
           })
-          .catch((error) => console.error("Error!", error.message));
+          .catch((error) => {
+            console.error("Error!", error.message);
+            spinner.style.display = "none";
+            overlayText.innerText = "Failed to send message.";
+            overlayText.style.color = "red";
+            overlayText.style.fontSize = "24px";
+          })
+          .finally(() => {
+            setTimeout(() => {
+              overlay.style.display = "none";
+            }, 1500);
+          });
       });
     </script>
   </body>
