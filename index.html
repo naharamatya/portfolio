@@ -342,7 +342,8 @@
     </script>
 
     <script>
-      let sidemenu = document.getElementById("sidemenu");
+      const sidemenu = document.getElementById("sidemenu");
+      const hamburgerIcon = document.querySelector(".fa-bars");
 
       function openmenu() {
         sidemenu.style.right = "0px";
@@ -351,6 +352,23 @@
       function closemenu() {
         sidemenu.style.right = "-200px";
       }
+
+      // Close the menu on link click
+      document.querySelectorAll("#sidemenu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          closemenu();
+        });
+      });
+
+      // Close menu when clicking outside the menu and hamburger icon
+      document.addEventListener("click", function (event) {
+        const isClickInsideMenu = sidemenu.contains(event.target);
+        const isClickOnHamburger = hamburgerIcon.contains(event.target);
+
+        if (!isClickInsideMenu && !isClickOnHamburger) {
+          closemenu();
+        }
+      });
     </script>
 
     <script>
