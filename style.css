@@ -60,12 +60,11 @@ nav {
 }
 
 .logo {
-  height: 42px;
+  height: 50px;
 }
 
 .logo:hover {
-  transform: translateY(-6px);
-  border-radius: 40%;
+  content: url("images/logo2.png");
 }
 
 .highlight {
