@@ -11,8 +11,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <span id="top-section"></span>
+  <body id="top-section">
     <nav class="nav-mobile">
       <span id="logo">
         <a href="#top-section"> <img src="images/logo.png" class="logo" /></a>
@@ -374,6 +373,42 @@
           closemenu();
         }
       });
+
+      let scrollStartedFromInsideMenu = false;
+
+      document.addEventListener("pointerdown", function (event) {
+        // Only check if inside menu (not hamburger icon)
+        const isInsideMenu = sidemenu.contains(event.target);
+        scrollStartedFromInsideMenu = isInsideMenu;
+
+        // OPTIONAL: Prevent body scroll if interacting inside menu
+        if (isInsideMenu) {
+          document.body.classList.add("noscroll"); // Disable page scroll
+        } else {
+          document.body.classList.remove("noscroll"); // Enable page scroll
+        }
+      });
+
+      document.addEventListener(
+        "scroll",
+        function () {
+          if (!scrollStartedFromInsideMenu) {
+            closemenu();
+          }
+        },
+        { passive: true }
+      );
+
+      // On scroll, close the menu only if scroll didn't start inside the menu
+      document.addEventListener(
+        "scroll",
+        function () {
+          if (!scrollStartedFromInsideMenu) {
+            closemenu();
+          }
+        },
+        { passive: true }
+      ); // passive helps with performance
     </script>
 
     <script>
