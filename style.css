@@ -625,8 +625,8 @@ nav .mobile-view {
     background: #ff004f;
     position: fixed;
     top: 0;
-    right: -200px;
-    width: 200px;
+    right: -230px;
+    width: 230px;
     height: 100%;
     padding-top: 50px;
     z-index: 2;
@@ -652,7 +652,7 @@ nav .mobile-view {
   #close {
     position: absolute;
     top: 20px;
-    left: 140px;
+    left: 160px;
     cursor: pointer;
   }
 
