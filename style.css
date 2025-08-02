@@ -89,7 +89,7 @@ nav ul li a {
 nav ul li a::after {
   content: "";
   width: 0%;
-  height: 3px;
+  height: 5px;
   background: #ff004f;
   position: absolute;
   left: 0;
@@ -98,6 +98,11 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
   width: 100%;
+}
+
+nav ul li a:hover {
+  color: #2f2f2f;
+  font-weight: bold;
 }
 
 .header-text {
@@ -176,16 +181,19 @@ nav ul li a:hover::after {
 .tab-links::after {
   content: "";
   width: 0;
-  height: 3px;
-  background: #ff004f;
+  height: 5px;
   position: absolute;
   left: 0;
   bottom: -8px;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .tab-links.active-link::after {
-  width: 50%;
+  background: #0561c4;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #2f2f2f #0561c4 #2f2f2f #2f2f2f;
+  width: 80%;
 }
 
 .tab-contents ul li {
@@ -611,6 +619,25 @@ nav .mobile-view {
     background-color: #0561c4;
   }
 
+  nav ul li a::after {
+    content: "";
+    width: 0%;
+    height: 5px;
+    background: #0561c4;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+  }
+
+  nav ul li a:hover::after {
+    width: 100%;
+  }
+
+  nav ul li a:hover {
+    color: #2f2f2f;
+    font-weight: bold;
+  }
+
   .nav-mobile {
     min-height: fit-content;
   }
@@ -625,8 +652,8 @@ nav .mobile-view {
     background: #ff004f;
     position: fixed;
     top: 0;
-    right: -230px;
-    width: 230px;
+    right: -250px;
+    width: 250px;
     height: 100%;
     padding-top: 50px;
     z-index: 2;
@@ -653,7 +680,7 @@ nav .mobile-view {
   #close {
     position: absolute;
     top: 20px;
-    left: 170px;
+    left: 190px;
     cursor: pointer;
     background-color: #fff;
     color: #2f2f2f;
