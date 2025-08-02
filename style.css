@@ -419,6 +419,7 @@ a[href^="mailto:"] {
 .resume {
   display: block;
   margin-top: 20px;
+  text-align: center;
 }
 
 .resume-btn {
@@ -432,7 +433,6 @@ a[href^="mailto:"] {
   border-radius: 70px;
   text-decoration: none;
   color: #fff;
-  width: 100%;
   white-space:nowrap;
 }
 
@@ -440,10 +440,6 @@ a[href^="mailto:"] {
   border: 2px solid #2f2f2f;
   background: #0561c4;
   transition: transform 1s;
-}
-
-.lm-5 {
-  margin-left: 5px;
 }
 
 .btn2 {
