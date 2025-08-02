@@ -447,13 +447,13 @@ a[href^="mailto:"] {
   background: #ff004f;
 }
 
-/* .pdf {
-  margin-right: 90px;
+.pdf {
+  margin-right: 60px;
 }
 
 .docx {
-  margin-right: 85px;
-} */
+  margin-right: 55px;
+}
 
 .contact-right form {
   width: 100%;
@@ -732,7 +732,7 @@ nav .mobile-view {
   }
 
   #logo {
-    margin: 10px 340px 10px 0px;
+    margin: 10px 300px 10px 0px;
     cursor: pointer;
   }
 
