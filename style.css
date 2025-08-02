@@ -24,7 +24,7 @@ body {
 }
 
 .nav-desktop {
-  border: 5px solid #69bf3a;
+  border: 2px solid #69bf3a;
 }
 
 #header {
@@ -496,7 +496,7 @@ form .btn2 {
   padding: 10px 0;
   background: #2f2f2f;
   font-weight: 500;
-  border: 5px solid #69bf3a;
+  border: 2px solid #69bf3a;
   /* margin-top: 10px; */
 }
 
