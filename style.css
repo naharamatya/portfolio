@@ -39,12 +39,10 @@ body {
   min-height: fit-content;
 }
 
-.nav-desktop{
-  display: flex;
-}
 #sidemenu {
   margin-right: 100px;
 }
+
 nav {
   display: flex;
   align-items: center;
@@ -58,7 +56,7 @@ nav {
 }
 
 #logo {
-  margin: 15px 0px 10px 50px;
+  margin: 10px 0px 10px 60px;
   cursor: pointer;
 }
 
@@ -82,6 +80,7 @@ nav ul li {
   list-style: none;
   margin: 10px 12px 10px 12px;
 }
+
 nav ul li a {
   text-decoration: none;
   color: #fff;
@@ -128,6 +127,7 @@ nav ul li a:hover {
   font-weight: 500;
   font-size: 34px;
 }
+
 /* -------------------------about---------------------------------- */
 
 #about {
@@ -433,7 +433,7 @@ a[href^="mailto:"] {
   border-radius: 70px;
   text-decoration: none;
   color: #fff;
-  white-space:nowrap;
+  white-space: nowrap;
 }
 
 .resume-btn:hover {
@@ -445,6 +445,14 @@ a[href^="mailto:"] {
 .btn2 {
   display: inline-block;
   background: #ff004f;
+}
+
+.pdf {
+  margin-right: 90px;
+}
+
+.docx {
+  margin-right: 85px;
 }
 
 .contact-right form {
@@ -518,6 +526,7 @@ form .btn2 {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -541,12 +550,15 @@ form .btn2 {
   0% {
     content: "";
   }
+
   33% {
     content: ".";
   }
+
   66% {
     content: "..";
   }
+
   100% {
     content: "...";
   }
@@ -562,15 +574,19 @@ form .btn2 {
   0% {
     content: "";
   }
+
   25% {
     content: ".";
   }
+
   50% {
     content: "..";
   }
+
   75% {
     content: "...";
   }
+
   100% {
     content: "";
   }
@@ -580,6 +596,7 @@ form .btn2 {
 nav .mobile-view {
   display: none;
 }
+
 @media only screen and (max-width: 650px) {
   html {
     min-width: fit-content;
@@ -715,8 +732,7 @@ nav .mobile-view {
   }
 
   #logo {
-    display: flex;
-    margin-right: 80%;
+    margin: 10px 340px 10px 0px;
     cursor: pointer;
   }
 
@@ -736,6 +752,7 @@ nav .mobile-view {
   .about-col-2 {
     font-size: 14px;
   }
+
   .tab-links {
     font-size: 16px;
     margin-right: 20px;
@@ -745,6 +762,10 @@ nav .mobile-view {
   .contact-left,
   .contact-right {
     flex-basis: 100%;
+  }
+
+  .contact-right form {
+    text-align: center;
   }
 
   .copyright {
@@ -788,16 +809,19 @@ nav .mobile-view {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
 }
 
 @keyframes blink-caret {
+
   from,
   to {
     border-color: transparent;
   }
+
   50% {
     border-color: black;
   }
