@@ -759,6 +759,11 @@ nav .mobile-view {
     font-weight: bold;
   }
 
+  .pdf,
+  .docx {
+    margin-right: 0px;
+  }
+
   .contact-left,
   .contact-right {
     flex-basis: 100%;
