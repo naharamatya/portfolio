@@ -447,13 +447,13 @@ a[href^="mailto:"] {
   background: #ff004f;
 }
 
-.pdf {
+/* .pdf {
   margin-right: 90px;
 }
 
 .docx {
   margin-right: 85px;
-}
+} */
 
 .contact-right form {
   width: 100%;
