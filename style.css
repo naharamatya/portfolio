@@ -39,6 +39,9 @@ body {
   min-height: fit-content;
 }
 
+.nav-desktop{
+  display: flex;
+}
 #sidemenu {
   margin-right: 100px;
 }
@@ -55,7 +58,7 @@ nav {
 }
 
 #logo {
-  margin: 15px 80px 10px 0px;
+  margin: 15px 0px 10px 50px;
   cursor: pointer;
 }
 
@@ -387,6 +390,11 @@ nav ul li a:hover {
   margin-right: 15px;
   font-size: 20px;
   margin-left: 30px;
+}
+
+a[href^="mailto:"] {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .social-icons {
