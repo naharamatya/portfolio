@@ -356,8 +356,8 @@ nav ul li a:hover {
 .btn {
   display: block;
   margin: 50px auto;
-  width: fit-content;
-  border: 1px solid #ff004f;
+  max-width: fit-content;
+  border: 2px solid #080808;
   padding: 14px 50px;
   border-radius: 60px;
   text-decoration: none;
@@ -365,8 +365,9 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-  background: #ff004f;
-  transition: transform 0.5s;
+  border: 2px solid #2f2f2f;
+  background: #0561c4;
+  transition: transform 1s;
 }
 
 .contact-left {
@@ -409,11 +410,13 @@ nav ul li a:hover {
 
 .resume {
   display: block;
+  min-width: fit-content;
 }
 
 .resume-btn {
   display: inline-block;
   background: #ff004f;
+  border: 2px solid #080808;
   padding: 14px 25px;
   font-size: 18px;
   cursor: pointer;
@@ -423,8 +426,18 @@ nav ul li a:hover {
   color: #fff;
 }
 
-.lp-5 {
+.resume-btn:hover {
+  border: 2px solid #2f2f2f;
+  background: #0561c4;
+  transition: transform 1s;
+}
+
+.lm-5 {
   margin-left: 5px;
+}
+
+.tm-20 {
+  margin-top: 20px;
 }
 
 .btn2 {
@@ -668,7 +681,7 @@ nav .mobile-view {
   #open {
     position: absolute;
     top: 20px;
-    left: 90%;
+    left: 88%;
     cursor: pointer;
     color: #fff;
   }
@@ -754,7 +767,7 @@ nav .mobile-view {
   }
 
   #about img {
-    margin-top: 70px;
+    margin-top: 150px;
   }
 }
 
