@@ -410,7 +410,7 @@ nav ul li a:hover {
 
 .resume {
   display: block;
-  min-width: fit-content;
+  margin-top: 20px;
 }
 
 .resume-btn {
@@ -424,6 +424,7 @@ nav ul li a:hover {
   border-radius: 70px;
   text-decoration: none;
   color: #fff;
+  width: 100%;
 }
 
 .resume-btn:hover {
@@ -434,10 +435,6 @@ nav ul li a:hover {
 
 .lm-5 {
   margin-left: 5px;
-}
-
-.tm-20 {
-  margin-top: 20px;
 }
 
 .btn2 {
