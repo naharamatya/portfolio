@@ -641,23 +641,35 @@ nav .mobile-view {
   #open {
     position: absolute;
     top: 20px;
-    left: 85%;
+    left: 90%;
     cursor: pointer;
+    color: #fff;
   }
 
   #open:hover {
-    color: #ff004f;
+    color: #2f2f2f;
   }
 
   #close {
     position: absolute;
     top: 20px;
-    left: 160px;
+    left: 170px;
     cursor: pointer;
+    background-color: #fff;
+    color: #2f2f2f;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
   }
 
   #close:hover {
-    color: #0561c4;
+    background-color: #2f2f2f;
+    color: #fff;
   }
 
   #logo {
