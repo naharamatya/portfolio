@@ -433,6 +433,7 @@ a[href^="mailto:"] {
   text-decoration: none;
   color: #fff;
   width: 100%;
+  white-space:nowrap;
 }
 
 .resume-btn:hover {
